@@ -1,0 +1,7 @@
+{
+  "run": "node server.js",
+  "entrypoint": "server.js",
+  "language": "nodejs",
+  "id": "about-me-website-shane-burke",
+  "name": "About Me Website - Shane Burke"
+}

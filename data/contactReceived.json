@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "message": "Hello Shane, I came across your website and was impressed by your work. I would like to discuss a potential project with you.",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "read": false
+  },
+  {
+    "id": 1,
+    "name": "Jane Smith",
+    "email": "jane.smith@test.com",
+    "message": "Hi Shane, I'm a student at NUI Galway and I was wondering if you could give me some advice on getting started with machine learning.",
+    "timestamp": "2024-01-16T14:20:00Z",
+    "read": true
+  },
+  {
+    "id": 2,
+    "name": "Tech Recruiter",
+    "email": "recruiter@techcorp.com",
+    "message": "We saw your profile and would like to discuss a software engineering position at our company. Please contact us at your earliest convenience.",
+    "timestamp": "2024-01-17T09:15:00Z",
+    "read": false
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "email": "michael.b@university.edu",
+    "message": "Great website! I'm particularly interested in your basketball achievements. Do you have any tips for balancing sports and academics?",
+    "timestamp": "2024-01-18T16:45:00Z",
+    "read": false
+  },
+  {
+    "id": 4,
+    "name": "Sarah Johnson",
+    "email": "sarah.j@company.com",
+    "message": "I've been following your open-source contributions on GitHub. Your recent PR to the React repository was very impressive. Keep up the great work!",
+    "timestamp": "2024-01-19T11:20:00Z",
+    "read": true
+  }
+]

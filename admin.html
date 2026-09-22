@@ -21,12 +21,12 @@
     
     <header>
         <h1>Admin Dashboard</h1>
-        <p>Manage website content and view analytics</p>
+        <p>Manage website content and messages</p>
     </header>
 
     <main>
         <section class="admin-login" id="loginSection">
-            <h2>Login</h2>
+            <h2>Admin Login</h2>
             <form id="loginForm" onsubmit="return handleLogin(event)">
                 <div class="form-group">
                     <label for="username">Username:</label>
@@ -63,17 +63,6 @@
                             <span class="stat-value" id="totalPages">6</span>
                             <span class="stat-label">Website Pages</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-value" id="lastUpdated">-</span>
-                            <span class="stat-label">Last Updated</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard-card">
-                    <h3>Page Views</h3>
-                    <div class="chart-container">
-                        <canvas id="pageViewsChart"></canvas>
                     </div>
                 </div>
 
@@ -89,15 +78,6 @@
                     </div>
                     <div class="messages-list" id="messagesList">
                         <p>No messages found.</p>
-                    </div>
-                </div>
-
-                <div class="dashboard-card">
-                    <h3>Quick Actions</h3>
-                    <div class="quick-actions">
-                        <button onclick="refreshStats()">Refresh Statistics</button>
-                        <button onclick="clearMessages()">Clear All Messages</button>
-                        <button onclick="exportData()">Export Data</button>
                     </div>
                 </div>
 

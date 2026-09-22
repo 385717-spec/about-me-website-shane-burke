@@ -20,7 +20,7 @@
     
     <header>
         <h1>Media Gallery</h1>
-        <p>Explore my photo and video collection</p>
+        <p>Photos and videos from my journey</p>
     </header>
 
     <main>
@@ -28,8 +28,6 @@
             <h2>Filter Media</h2>
             <div class="filter-buttons">
                 <button onclick="filterMedia('all')" class="filter-btn active">All</button>
-                <button onclick="filterMedia('sports')" class="filter-btn">Sports</button>
-                <button onclick="filterMedia('travel')" class="filter-btn">Travel</button>
                 <button onclick="filterMedia('projects')" class="filter-btn">Projects</button>
                 <button onclick="filterMedia('personal')" class="filter-btn">Personal</button>
             </div>
@@ -37,123 +35,48 @@
 
         <section class="media-gallery">
             <div class="gallery-grid">
-                <div class="media-card" data-category="sports">
-                    <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Basketball+Game" alt="Basketball Game">
-                    </div>
-                    <div class="media-info">
-                        <h3>Basketball Championship</h3>
-                        <p>Winning the county championship with my team in 2021.</p>
-                        <span class="media-category">Sports</span>
-                    </div>
-                </div>
-
-                <div class="media-card" data-category="travel">
-                    <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Paris+Tower" alt="Eiffel Tower">
-                    </div>
-                    <div class="media-info">
-                        <h3>Paris Vacation</h3>
-                        <p>Visiting the Eiffel Tower during my summer trip to France.</p>
-                        <span class="media-category">Travel</span>
-                    </div>
-                </div>
-
                 <div class="media-card" data-category="projects">
                     <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Robot+Project" alt="Robot Project">
+                        <img src="images/placeholder-1.jpg" alt="Project 1">
                     </div>
                     <div class="media-info">
-                        <h3>Robotic Arm</h3>
-                        <p>My Raspberry Pi controlled robotic arm project for university.</p>
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span class="media-category">Projects</span>
                     </div>
                 </div>
 
                 <div class="media-card" data-category="personal">
                     <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Graduation+Day" alt="Graduation">
+                        <img src="images/placeholder-2.jpg" alt="Personal Photo">
                     </div>
                     <div class="media-info">
-                        <h3>Graduation Day</h3>
-                        <p>Graduating with First Class Honours in Computer Science.</p>
+                        <h3>Personal Photo</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span class="media-category">Personal</span>
-                    </div>
-                </div>
-
-                <div class="media-card" data-category="sports">
-                    <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Marathon+Finish" alt="Marathon Finish">
-                    </div>
-                    <div class="media-info">
-                        <h3>Marathon Completion</h3>
-                        <p>Crossing the finish line at the Dublin Marathon 2023.</p>
-                        <span class="media-category">Sports</span>
-                    </div>
-                </div>
-
-                <div class="media-card" data-category="travel">
-                    <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=New+York+City" alt="New York">
-                    </div>
-                    <div class="media-info">
-                        <h3>New York Trip</h3>
-                        <p>Times Square at night during my visit to NYC.</p>
-                        <span class="media-category">Travel</span>
                     </div>
                 </div>
 
                 <div class="media-card" data-category="projects">
                     <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Hackathon+Win" alt="Hackathon">
+                        <img src="images/placeholder-3.jpg" alt="Project 2">
                     </div>
                     <div class="media-info">
-                        <h3>Hackathon Victory</h3>
-                        <p>Winning first place at the National Hackathon 2022 with my team.</p>
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span class="media-category">Projects</span>
                     </div>
                 </div>
 
                 <div class="media-card" data-category="personal">
                     <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Family+Photo" alt="Family">
+                        <img src="images/placeholder-4.jpg" alt="Personal Photo 2">
                     </div>
                     <div class="media-info">
-                        <h3>Family Gathering</h3>
-                        <p>Celebrating Christmas with my family in 2023.</p>
+                        <h3>Personal Photo 2</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span class="media-category">Personal</span>
                     </div>
-                </div>
-
-                <div class="media-card" data-category="sports">
-                    <div class="media-image">
-                        <img src="https://via.placeholder.com/400x300?text=Swimming+Pool" alt="Swimming">
-                    </div>
-                    <div class="media-info">
-                        <h3>Training Session</h3>
-                        <p>Morning swim training at the local pool.</p>
-                        <span class="media-category">Sports</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="video-section">
-            <h2>Featured Videos</h2>
-            <div class="video-grid">
-                <div class="video-card">
-                    <div class="video-embed">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h3>Basketball Highlights</h3>
-                    <p>My best plays from the 2022-2023 season.</p>
-                </div>
-                <div class="video-card">
-                    <div class="video-embed">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h3>Project Demo</h3>
-                    <p>Demonstration of my machine learning image recognition project.</p>
                 </div>
             </div>
         </section>

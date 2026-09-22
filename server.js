@@ -7,6 +7,12 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Create images directory if it doesn't exist
+const imagesDir = path.join(__dirname, 'images');
+if (!fs.existsSync(imagesDir)) {
+    fs.mkdirSync(imagesDir, { recursive: true });
+}
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,6 +24,10 @@ app.use(express.static(path.join(__dirname)));
 
 // In-memory storage for contact messages (in production, use a database)
 let contactMessages = [];
+
+// Admin credentials
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
 
 // Load existing messages from file
 function loadMessages() {
@@ -137,7 +147,7 @@ app.post('/api/admin/login', (req, res) => {
     const { username, password } = req.body;
     
     // In production, use proper authentication with hashed passwords
-    if (username === 'admin' && password === 'admin123') {
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
         res.json({ 
             success: true, 
             message: 'Login successful',
